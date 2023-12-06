@@ -9,16 +9,16 @@
 body {
     height: 100vh;
     overflow-x: hidden;
-    color: #323235;
-    background-color: #f6f6f6;
+    background: #f6f6f6;
 }
 
 header {
     position: absolute;
     top: 0;
     left: 0;
+    height: 80px;
     width: 100%;
-    padding: 30px 100px;
+    padding: 0px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,5 +27,28 @@ header {
 
 .logo {
     font-size: 2em;
+    font-weight: bold;
+    font-style: normal;
+    font-weight: 600;
     color: 0021E7;
+    pointer-events: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
