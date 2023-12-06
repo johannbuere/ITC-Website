@@ -25,15 +25,6 @@ header {
     z-index: 100;
 }
 
-.logo {
-    font-size: 2em;
-    font-weight: bold;
-    font-style: normal;
-    font-weight: 600;
-    color: 0021E7;
-    pointer-events: none;
-}
-
 a {
     text-decoration: none;
     color: white;
