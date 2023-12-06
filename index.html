@@ -7,16 +7,19 @@
     <title>ITC Website - Home</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="wrapper">
+            <nav class="tabs">
+                <input type="radio" name="tabs" checked id="tab1">
+                <label for="tab1">Home</label>
+                <input type="radio" name="tabs" checked id="tab2">
+                <label for="tab2">Services</label>
+                <input type="radio" name="tabs" checked id="tab3">
+                <label for="tab3">About</label>
+                <input type="radio" name="tabs" checked id="tab4">
+                <label for="tab4">Contact</label>
+                <div class="glider"></div>
+            </nav>
+    </div>
     
     <script src="script.js"></script>
 </body>
