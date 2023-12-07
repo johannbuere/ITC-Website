@@ -5,58 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>ITC Website - Home</title>
-    <!--========== Unicons iconsout ===========-->
+    <!--========== Unicons ===========-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
 <body>
-    <!--navigation tab...here-->
-    <section class="main-container">
+    <main>
+        <!--navigation tab...here-->
+        <section class="main-container">
 
-        <div class="tab-nav-bar">
-            <div class="tab-navigation">
-                <ul class="tab-menu">
-                    <li class="tab-btn active">Home</li>
-                    <li class="tab-btn">Portfolio's</li>
-                    <li class="tab-btn">About</li>
-                    <li class="tab-btn">Contact Us</li>
-                </ul>
-            </div>
-        </div>
-        <!--tab content...here-->
-        <div class="tab-content">
-            
-            <div class="tab active">
-                <!--hero text...here-->
-                <div class="hero-text-wrapper">
-                    <h1 class="black-gradient">Welcome!</h1>
-                    <div class="hero-centered-paragraph">Explore our portfolios for a diverse range of projects and skills.<br><b>We're excited to share our work with you!</b></div>
+            <div class="tab-nav-bar">
+                <div class="tab-navigation">
+                    <ul class="tab-menu">
+                        <li class="tab-btn active">Home</li>
+                        <li class="tab-btn">Portfolio's</li>
+                        <li class="tab-btn">About</li>
+                        <li class="tab-btn">Contact Us</li>
+                    </ul>
                 </div>
-                <a class="portfolio-card"></a>
-                <p>test tab 1</p>
             </div>
-
-            <div class="tab">
-                <a class="portfolio-card"></a>
-                <p>test tab 2</p>
-            </div>
-        
-
-            <div class="tab">
-                <a class="portfolio-card"></a>
-                <p>test tab 3</p>
-            </div>
-        
-
-            <div class="tab">
-                <!--contact tab...here-->
-                <section classs="--contact"    
+            <!--tab content...here-->
+            <div class="tab-content">
+                
+                <div class="tab active">
+                    <!--hero text...here-->
+                    <div class="hero-text-wrapper">
+                        <h1 class="black-gradient">Welcome!</h1>
+                        <div class="hero-centered-paragraph">Explore our portfolios for a diverse range of projects and skills.<br><b>We're excited to share our work with you!</b></div>
+                    </div>
                     <a class="portfolio-card"></a>
-                    <p>test tab 4</p>
-            </div>
+                    <p>test tab 1</p>
+                </div>
 
-        </div>
-        
-    </section>
+                <div class="tab">
+                    <a class="portfolio-card"></a>
+                    <p>test tab 2</p>
+                </div>
+            
+
+                <div class="tab">
+                    <a class="portfolio-card"></a>
+                    <p>test tab 3</p>
+                </div>
+            
+
+                <div class="tab">
+                    <!--contact tab...here-->
+                    <section classs="contact">
+                        <div class="contact-center"></div>
+                            <div class="contact-heading">
+                                <h1>Connect With Us</h1>
+                                <p class="contact-subh"> We would love to respond to your queries</p>
+
+                                <form action="index.html" method="post" class="contact-form">
+
+                                    <div class="input-wrap">
+                                        <input class="contact-input" autocomplete="off" name="First Name" type="text" required>
+                                        <label>First Name</label>
+                                        <i class="icon fa-solid fa-id-card"></i>
+                                    </div>
+
+                                    <div class="input-wrap">
+                                        <input class="contact-input" autocomplete="off" name="Last Name" type="text" required>
+                                         <label>Last Name</label>
+                                        <i class="icon fa-solid fa-id-card"></i>
+                                    </div>
+
+                                    <div class="input-wrap w-100">
+                                        <input class="contact-input" autocomplete="off" name="Email" type="text" required>
+                                        <label>Email</label>
+                                        <i class="icon fa-solid fa-envelope"></i>
+                                    </div>
+
+                                    <div class="input-wrap textarea w-100">
+                                        <textarea name="Message" autocomplete="off" class="contact-input" required></textarea>
+                                        <label>Message</label> 
+                                        <i class="icon fa-solid fa-envelope"></i>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </section>   
+                </div>
+
+            </div>
+            
+        </section>
+    </main>
     <script src="script.js"></script>
+    <!--========== fontawesome ===========-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
