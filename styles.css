@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root{
-    --first-color: 	#666666;
-    --second-color: #dddddd;
-    --third-color: #fff;
-    --fourth-color: #bbbbbb;
-    --fifth-color: #f6f6f6;
+    --first-color: #dddddd;
+    --second-color: #fff;
+    --third-color: #f6f6f6;
     --text-color: #222;
 
     --box-shadow: 0 5px 25px rgb(2,2,2,0.1);
@@ -19,7 +17,7 @@
 }
 
 body{
-    background: var(--fifth-color)
+    background: var(--third-color)
 }
 
 /* This is where the CSS for the tab scroller start */
@@ -52,11 +50,11 @@ section{
 .tab-menu{
     color: var(--text-color);
     list-style: none;
-    background: var(--fifth-color);
+    background: var(--third-color);
     max-width: 800px;
     padding: 10px;
     white-space: nowrap;
-    border-bottom: 1px solid var(--fifth-color);
+    border-bottom: 1px solid var(--third-color);
     border-radius: 50px;
     box-shadow: var(--box-shadow);
 }
@@ -70,19 +68,19 @@ section{
     margin: 0 2px;
     padding: 10px 20px;
     border-radius: 30px;
-    background: var(--second-color);
+    background: var(--first-color);
     cursor: pointer;
     user-select: none;
 }
 
 .tab-btn:hover{
     font-weight: 800;
-    background: var(--third-color);
+    background: var(--second-color);
 }
 
 .tab-btn.active{
     font-weight: 800;
-    background: var(--third-color);
+    background: var(--second-color);
     box-shadow: var(--box-shadow);
 }
 
@@ -189,4 +187,25 @@ section{
     box-shadow: none;
     background-color: #eceff1;
     transform: none;
+}
+
+/* media queires here */
+@media screen and (max-width: 1050px){
+    section{
+        margin: 0 0px;
+    }
+
+    .tab-nav-bar {
+        margin: 65px 20px 40px 25px;
+    }
+
+    .tab{
+        padding: 15px 25px;
+    }
+
+    .portfolio-card{
+        width: auto;
+        max-width: 800px;
+        min-width: 700px;
+    }
 }
