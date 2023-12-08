@@ -37,6 +37,34 @@ a {
     display: inline-block;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+/* progress button & back 2 top button */
+#progress {
+    background-color: #666666;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  #progress-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: var(--text-color);
+  }
 /* This is where the CSS for the tab scroller start */
 section{
     position: relative;
@@ -64,7 +92,10 @@ section{
     margin: 0 auto;
 }
 
-.tab-menu{
+.tab-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--text-color);
     list-style: none;
     background: var(--third-color);
@@ -76,7 +107,7 @@ section{
     box-shadow: var(--box-shadow);
 }
 
-.tab-btn{
+.tab-btn {
     color: var(--text-color);
     display: inline-block;
     font-size: 1em;
@@ -89,6 +120,7 @@ section{
     cursor: pointer;
     user-select: none;
 }
+
 
 .tab-btn:hover{
     font-weight: 800;
@@ -340,8 +372,41 @@ section{
     white-space: nowrap;
     position: relative;
     margin-top: 140px;
-    margin-bottom: 280px;
+    margin-bottom: 10px;
 }
+
+.portfolio-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 250px;
+}
+.portfolio-btn {
+    color: #fff;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 400;
+    transition: font-weight 0.2s ease-in-out;
+    margin: 0 2px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: var(--light-text-color);
+    cursor: pointer;
+}
+
+.portfolio-btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:hover a {
+    font-weight: 800;
+    color: var(--text-color);
+    background: var(--first-color);
+}
+
 
 /* The portfolio boxes css starts here */
 .portfolio-card {
@@ -355,6 +420,7 @@ section{
     border-radius: 24px;
     justify-content: relative;
     align-items: center;
+    margin-top: 96px;
     margin-bottom: 96px;
     padding-top: 0;
     padding-bottom: 0;
@@ -364,7 +430,6 @@ section{
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .portfolio-card:hover {

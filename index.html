@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
 <body>
+    <!--========== progress and back 2 top btn ===========-->
+    <div id="progress">
+        <span id="progress-value">&#x1F815;</span>
+      </div>
     <main>
         <!--navigation tab...here-->
         <section class="main-container">
@@ -25,6 +29,7 @@
             </div>
             <!--tab content...here-->
             <div class="tab-content">
+                
                 <div class="particle-wrapper">
                     <div class="particle-8"></div>
                     <div class="particle-7"></div>
@@ -63,41 +68,88 @@
                             <div class="portfolio-heading">
                                 <h1>Portfolio's</h1>
                             </div>
-                                <a href="" class="portfolio-card w-inline-block">
-                                    <div class="v-stack max-width">
-                                        <div class="v-space small"></div>
-                                        <h2 class="link-text">Johann Reuel Buere</h2>
-                                        <div class="h-stack">
-                                            <p class="small-caps-subtitle">Graphic Designer</p>
-                                            <div class="h-space-8px"></div>
-                                            <p class="small-caps-subtitle light">•</p>
-                                            <div class="h-space-8px"></div>
-                                            <p class="small-caps-subtitle">2023</p>
-                                        </div>
-                                        <div class="v-space small"></div>
-                                        <p class="link-text">Simplicity meets eye-catching elegance</p>
-                                    <div class="primary-button">
-                                            <div class="button-text">Check It Out</div><img src="https://uploads-ssl.webflow.com/5e1689facb9d5168c0dcbe0b/5fd4f3b57684da0e44ba39cb_ArrowRight.svg" loading="lazy" width="24" height="24" alt="" class="button-icon" /></div>
-                                        </div><img src="Johann-Picture.png" loading="lazy" alt="Johann's Picture" sizes=""class="portfolio-preview-image right-align" />
-                                </a>
-                            
-                                <a href="" class="portfolio-card w-inline-block">
-                                    <div class="v-stack max-width">
-                                        <div class="v-space small"></div>
-                                        <h2 class="link-text">Jaykob Perdigon</h2>
-                                        <div class="h-stack">
-                                            <p class="small-caps-subtitle">Graphic Designer</p>
-                                            <div class="h-space-8px"></div>
-                                            <p class="small-caps-subtitle light">•</p>
-                                            <div class="h-space-8px"></div>
-                                            <p class="small-caps-subtitle">2023</p>
-                                        </div>
-                                        <div class="v-space small"></div>
-                                        <p class="link-text">Daniel Paddilla Rip-Off</p>
-                                    <div class="primary-button">
-                                            <div class="button-text">Check It Out</div><img src="https://uploads-ssl.webflow.com/5e1689facb9d5168c0dcbe0b/5fd4f3b57684da0e44ba39cb_ArrowRight.svg" loading="lazy" width="24" height="24" alt="" class="button-icon" /></div>
-                                        </div><img src="" loading="lazy" alt="Jackob's Picture" sizes=""class="portfolio-preview-image right-align" />
-                            </a>
+                                <ul class="portfolio-menu">
+                                    <li class="portfolio-btn"><a href="#johann-portfolio">Johann's</a></li>
+                                    <li class="portfolio-btn"><a href="#jaykob-portfolio">Jaykob's</a></li>
+                                    <li class="portfolio-btn">Alexander's</li>
+                                    <li class="portfolio-btn">Shuanley's</li>
+                                </ul>
+                                <section id="johann-portfolio">
+                                    <a href="" class="portfolio-card w-inline-block">
+                                        <div class="v-stack max-width">
+                                            <div class="v-space small"></div>
+                                            <h2 class="link-text">Johann Reuel Buere</h2>
+                                            <div class="h-stack">
+                                                <p class="small-caps-subtitle">Graphic Designer</p>
+                                                <div class="h-space-8px"></div>
+                                                <p class="small-caps-subtitle light">•</p>
+                                                <div class="h-space-8px"></div>
+                                                <p class="small-caps-subtitle">2023</p>
+                                            </div>
+                                            <div class="v-space small"></div>
+                                            <p class="link-text">Simplicity meets eye-catching elegance</p>
+                                        <div class="primary-button">
+                                                <div class="button-text">Check It Out</div><img src="https://uploads-ssl.webflow.com/5e1689facb9d5168c0dcbe0b/5fd4f3b57684da0e44ba39cb_ArrowRight.svg" loading="lazy" width="24" height="24" alt="" class="button-icon" /></div>
+                                            </div><img src="Johann-Picture.png" loading="lazy" alt="Johann's Picture" sizes=""class="portfolio-preview-image right-align" />
+                                    </a>
+                                </section>
+                                <section id="jaykob-portfolio">
+                                    <a href="" class="portfolio-card w-inline-block">
+                                        <div class="v-stack max-width">
+                                            <div class="v-space small"></div>
+                                            <h2 class="link-text">Jaykob Perdigon</h2>
+                                            <div class="h-stack">
+                                                <p class="small-caps-subtitle">Gamer Boy</p>
+                                                <div class="h-space-8px"></div>
+                                                <p class="small-caps-subtitle light">•</p>
+                                                <div class="h-space-8px"></div>
+                                                <p class="small-caps-subtitle">2023</p>
+                                            </div>
+                                            <div class="v-space small"></div>
+                                            <p class="link-text">Daniel Paddilla Rip-Off</p>
+                                        <div class="primary-button">
+                                                <div class="button-text">Check It Out</div><img src="https://uploads-ssl.webflow.com/5e1689facb9d5168c0dcbe0b/5fd4f3b57684da0e44ba39cb_ArrowRight.svg" loading="lazy" width="24" height="24" alt="" class="button-icon" /></div>
+                                            </div><img src="" loading="lazy" alt="Jackob's Picture" sizes=""class="portfolio-preview-image right-align" />
+                                    </a>
+                                </section>
+                                <section id="shuanley-portfolio">
+                                    <a href="" class="portfolio-card w-inline-block">
+                                        <div class="v-stack max-width">
+                                            <div class="v-space small"></div>
+                                            <h2 class="link-text">Shuanley Escara</h2>
+                                            <div class="h-stack">
+                                                <p class="small-caps-subtitle">Fuck Boy</p>
+                                                <div class="h-space-8px"></div>
+                                                <p class="small-caps-subtitle light">•</p>
+                                                <div class="h-space-8px"></div>
+                                                <p class="small-caps-subtitle">2023</p>
+                                            </div>
+                                            <div class="v-space small"></div>
+                                            <p class="link-text">Hingi Braincells</p>
+                                        <div class="primary-button">
+                                                <div class="button-text">Check It Out</div><img src="https://uploads-ssl.webflow.com/5e1689facb9d5168c0dcbe0b/5fd4f3b57684da0e44ba39cb_ArrowRight.svg" loading="lazy" width="24" height="24" alt="" class="button-icon" /></div>
+                                            </div><img src="" loading="lazy" alt="Jackob's Picture" sizes=""class="portfolio-preview-image right-align" />
+                                    </a>
+                                </section>
+                                <section id="alexaner-portfolio">
+                                    <a href="" class="portfolio-card w-inline-block">
+                                        <div class="v-stack max-width">
+                                            <div class="v-space small"></div>
+                                            <h2 class="link-text">Alexander Estor</h2>
+                                            <div class="h-stack">
+                                                <p class="small-caps-subtitle">Pitik ni Alex</p>
+                                                <div class="h-space-8px"></div>
+                                                <p class="small-caps-subtitle light">•</p>
+                                                <div class="h-space-8px"></div>
+                                                <p class="small-caps-subtitle">2023</p>
+                                            </div>
+                                            <div class="v-space small"></div>
+                                            <p class="link-text">Every shot is an artwork</p>
+                                        <div class="primary-button">
+                                                <div class="button-text">Check It Out</div><img src="https://uploads-ssl.webflow.com/5e1689facb9d5168c0dcbe0b/5fd4f3b57684da0e44ba39cb_ArrowRight.svg" loading="lazy" width="24" height="24" alt="" class="button-icon" /></div>
+                                            </div><img src="" loading="lazy" alt="Jackob's Picture" sizes=""class="portfolio-preview-image right-align" />
+                                    </a>
+                                </section>
                         </div> 
                                
                         </div>
