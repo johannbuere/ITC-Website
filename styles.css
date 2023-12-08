@@ -25,7 +25,16 @@
 }
 
 body{
-    background: var(--third-color)
+    background: var(--third-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block;
 }
 
 /* This is where the CSS for the tab scroller start */
@@ -301,46 +310,6 @@ section{
     transition: 1s ease;
 }
 
-
-/* The portfolio boxes css starts here */
-.portfolio-card {
-    width: 100%;
-    height: 440px;
-    max-width: 1000px;
-    min-width: 900px;
-    box-shadow: none;
-    cursor: pointer;
-    background-color: #eceff1;
-    border-radius: 24px;
-    justify-content: relative;
-    align-items: center;
-    margin-bottom: 96px;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 64px;
-    transition: all .2s ease-out;
-    display: flex;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.portfolio-card:hover {
-    background-color: #f6f6f6;
-    transform: scale(1.02);
-    box-shadow: 0 0 #e6ebef, 0 4px 24px rgba(0, 0, 0, .08);
-}
-
-.portfolio-card.disabled {
-    cursor: not-allowed;
-}
-
-.portfolio-card.disabled:hover {
-    box-shadow: none;
-    background-color: #eceff1;
-    transform: none;
-}
-
 /*portfolio tab*/
 .portfolio{
     width:100px;
@@ -367,9 +336,165 @@ section{
     font-weight: 700;
     color: var(--text-color);
     text-align: center;
-    font-size: 50px;
+    font-size: 100px;
     white-space: nowrap;
     position: relative;
+    margin-top: 140px;
+    margin-bottom: 280px;
+}
+
+/* The portfolio boxes css starts here */
+.portfolio-card {
+    width: 100%;
+    height: 440px;
+    max-width: 1000px;
+    min-width: 900px;
+    box-shadow: none;
+    cursor: pointer;
+    background-color: #eceff1;
+    border-radius: 24px;
+    justify-content: relative;
+    align-items: center;
+    margin-bottom: 96px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 64px;
+    transition: all .2s ease-out;
+    display: flex;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.portfolio-card:hover {
+    background-color: #f6f6f6;
+    transform: scale(1.02);
+    box-shadow: 0 0 #e6ebef, 0 4px 24px rgba(0, 0, 0, .08);
+}
+
+.portfolio-card.disabled {
+    cursor: not-allowed;
+}
+
+.portfolio-card.disabled:hover {
+    box-shadow: none;
+    background-color: #eceff1;
+    transform: none;
+}
+
+.link-text {
+    color: #323235;
+}
+
+.small-caps-subtitle {
+    color: #5e5e63;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 160%;
+}
+
+.small-caps-subtitle.light {
+    color: #bdbdc5;
+}
+
+.portfolio-preview-image {
+    z-index: 0;
+    height: 400px;
+    max-width: 480px;
+    object-fit: cover;
+    object-position: 60% 100%;
+    border-radius: 16px;
+    align-self: stretch;
+    position: relative;
+    bottom: -40px;
+    right: -12px;
+}
+
+.v-space {
+    width: 100%;
+    height: 32px;
+}
+
+.v-space.extra-large {
+    height: 128px;
+}
+
+.v-space.extra-large.color {
+    background-color: #bdbdc5;
+}
+
+.v-space.large {
+    height: 64px;
+}
+
+.v-space.large.color {
+    background-color: #bdbdc5;
+}
+
+.v-space.medium {
+    height: 32px;
+}
+
+.v-space.medium.color {
+    background-color: #bdbdc5;
+}
+
+.v-space.small{
+    height: 16px;
+}
+
+.v-space.small.color {
+    background-color: #bdbdc5;
+}
+
+.callout-container {
+    width: 100%;
+    max-width: 664px;
+    background-color: #fff;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px 32px;
+}
+
+.button-text {
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(107deg, #74747a, #323235);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.button-icon {
+    margin-left: 9px;
+    position: relative;
+}
+
+.primary-button {
+    box-shadow: none;
+    color: #323235;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 24px;
+    transition: color .2s;
+    display: flex;
+    margin-top: 20px;
+}
+
+.primary-button:hover {
+    box-shadow: none;
+    color: #5e5e63;
+    border-radius: 12px;
+}
+
+.primary-button.fill {
+    width: 100%;
 }
 
 /*contact tab*/
