@@ -32,11 +32,6 @@ a {
     text-decoration: none;
 }
 
-.w-inline-block {
-    max-width: 100%;
-    display: inline-block;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -299,7 +294,7 @@ section{
     justify-content: center;
     align-items: center;
     margin-top: 140px;
-    margin-bottom: 218px;
+    margin-bottom: 150px;
     display: flex;
     position: relative;
 }
@@ -318,11 +313,11 @@ section{
 
 
 /* content tabs begin here */
-.tab-content{
-    position:relative;
-    display: flex;
-    justify-content: center;
+.tab-content {
+    position: relative;
+    display: block; /* Change to block instead of flex */
     width: 100%;
+    overflow: visible; /* Allow overflow */
 }
 
 .tab{
@@ -341,6 +336,8 @@ section{
     opacity: 1;
     transition: 1s ease;
 }
+
+
 
 /*portfolio tab*/
 .portfolio{
@@ -379,8 +376,8 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 250px;
+    margin-top: 125px;
+    margin-bottom: 125px;
 }
 .portfolio-btn {
     color: #fff;
@@ -407,6 +404,143 @@ section{
     background: var(--first-color);
 }
 
+/* Slider */
+.slider {
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.slider input {
+    display: none;
+}
+
+.testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    min-height: 440px; /* Adjusted to match the height of .portfolio-card */
+    perspective: 1000px;
+    overflow: visible;
+    z-index: 1;
+}
+
+.testimonials .item {
+    width: 100%; /* Adjusted width */
+    height: 440px; /* Adjusted height */
+    padding: 30px;
+    border-radius: 24px;
+    background-color: #eceff1;
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+    text-align: center;
+    transition: opacity 0.4s, transform 0.4s;
+    opacity: 0;
+    transform: scale(0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    user-select: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+.testimonials .item h1 {
+    font-size: 114px;
+    color: #404457; /* Use the text color from .portfolio-card */
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dots label {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #413b52;
+    margin: 7px;
+    transition-duration: 0.2s;
+}
+
+#t-1:checked ~ .testimonials .item[for="t-1"],
+#t-2:checked ~ .testimonials .item[for="t-2"],
+#t-3:checked ~ .testimonials .item[for="t-3"],
+#t-4:checked ~ .testimonials .item[for="t-4"],
+#t-5:checked ~ .testimonials .item[for="t-5"] {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+#t-1:checked ~ .dots label[for="t-1"],
+#t-2:checked ~ .dots label[for="t-2"],
+#t-3:checked ~ .dots label[for="t-3"],
+#t-4:checked ~ .dots label[for="t-4"],
+#t-5:checked ~ .dots label[for="t-5"] {
+    transform: scale(2);
+    background-color: #404457; /* Use the active color from .portfolio-card */
+    box-shadow: 0px 0px 0px 3px #dddddd24;
+}
+
+#t-1:checked ~ .dots label[for="t-2"],
+#t-2:checked ~ .dots label[for="t-1"],
+#t-2:checked ~ .dots label[for="t-3"],
+#t-3:checked ~ .dots label[for="t-2"],
+#t-3:checked ~ .dots label[for="t-4"],
+#t-4:checked ~ .dots label[for="t-3"],
+#t-4:checked ~ .dots label[for="t-5"],
+#t-5:checked ~ .dots label[for="t-4"]{
+	transform: scale(1.5);
+}
+
+#t-1:checked ~ .testimonials label[for="t-3"],
+#t-2:checked ~ .testimonials label[for="t-4"],
+#t-3:checked ~ .testimonials label[for="t-5"],
+#t-4:checked ~ .testimonials label[for="t-1"],
+#t-5:checked ~ .testimonials label[for="t-2"]{
+	transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+	z-index: 2;
+}
+
+#t-1:checked ~ .testimonials label[for="t-2"],
+#t-2:checked ~ .testimonials label[for="t-3"],
+#t-3:checked ~ .testimonials label[for="t-4"],
+#t-4:checked ~ .testimonials label[for="t-5"],
+#t-5:checked ~ .testimonials label[for="t-1"]{
+	transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+	z-index: 3;
+}
+
+#t-2:checked ~ .testimonials label[for="t-1"],
+#t-3:checked ~ .testimonials label[for="t-2"],
+#t-4:checked ~ .testimonials label[for="t-3"],
+#t-5:checked ~ .testimonials label[for="t-4"],
+#t-1:checked ~ .testimonials label[for="t-5"]{
+	transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+	z-index: 3;
+}
+
+#t-3:checked ~ .testimonials label[for="t-1"],
+#t-4:checked ~ .testimonials label[for="t-2"],
+#t-5:checked ~ .testimonials label[for="t-3"],
+#t-2:checked ~ .testimonials label[for="t-5"],
+#t-1:checked ~ .testimonials label[for="t-4"]{
+	transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+	
+}
+
+#t-1:checked ~ .testimonials label[for="t-1"],
+#t-2:checked ~ .testimonials label[for="t-2"],
+#t-3:checked ~ .testimonials label[for="t-3"],
+#t-4:checked ~ .testimonials label[for="t-4"],
+#t-5:checked ~ .testimonials label[for="t-5"] {
+    z-index: 4;
+}
 
 /* The portfolio boxes css starts here */
 .portfolio-card {
@@ -414,22 +548,18 @@ section{
     height: 440px;
     max-width: 1000px;
     min-width: 900px;
-    box-shadow: none;
-    cursor: pointer;
     background-color: #eceff1;
     border-radius: 24px;
+    margin: 125px auto;
+    padding: 0 0 0 64px;
+    box-shadow: none;
+    cursor: pointer;
+    display: flex;
     justify-content: relative;
     align-items: center;
-    margin-top: 96px;
-    margin-bottom: 96px;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 64px;
-    transition: all .2s ease-out;
-    display: flex;
     overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
+    transition: all 0.2s ease-out;
+    clear: both;
 }
 
 .portfolio-card:hover {
