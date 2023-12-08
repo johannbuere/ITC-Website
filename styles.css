@@ -496,6 +496,18 @@ section{
 .primary-button.fill {
     width: 100%;
 }
+.portfolio-preview-image {
+    z-index: 0;
+    height: 700px;
+    max-width: 280px;
+    object-fit: cover;
+    object-position: 40% 100%;
+    border-radius: 16px;
+    align-self: stretch;
+    position: relative;
+    bottom: 40px;
+    right: -120px;
+}
 
 /*contact tab*/
 .contact{
