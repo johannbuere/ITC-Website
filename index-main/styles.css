@@ -567,11 +567,13 @@ section{
 
 /* get to know us */
 .gtku{
-    width:100px;
     overflow: hidden;
     background-color: var(--first-color);
+    width: 100%;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
 .gtku-center{
     align-items: center;
     width: 100%;
@@ -580,6 +582,13 @@ section{
     justify-content: center;
     display: flex;
     position: relative;
+}
+
+.gtku-heading{
+    width: 100%;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .gtku-heading h1 {
@@ -595,12 +604,54 @@ section{
     white-space: nowrap;
     margin-bottom: 0.2rem;
     position: relative;
-    margin-top: 140px;
 }
 .gtku-subh{
     color: var(--light-text-color);
     text-align: center;
     font-size: 1rem;
+}
+
+.callout-container {
+    width: 100%;
+    max-width: 664px;
+    background-color: #fff;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px 32px;
+}
+
+.callout-text {
+    width: 100%;
+    color: #323235;
+    margin-bottom: 0;
+    line-height: 150%;
+}
+
+.small-caps-header {
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 160%;
+}
+
+.v-space.medium {
+    height: 32px;
+}
+
+.intro-role-team {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.callout-text {
+    width: 100%;
+    color: #323235;
+    margin-bottom: 0;
+    line-height: 150%;
 }
 
 /*contact tab*/
