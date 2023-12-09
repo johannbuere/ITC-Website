@@ -17,9 +17,39 @@
     --light-main-color: hsla(var(--main-hue), 91%, 50%);
 }
 
+body {
+    min-height: 100%;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
 a {
     color: #5e5e63;
     text-decoration: none;
+}
+
+.strong-text {
+    max-width: 500px;
+    color: #5e5e63;
+    text-align: left;
+    letter-spacing: .005em;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* top of the page */
@@ -30,7 +60,7 @@ a {
 }
 
 .menu-holder {
-    z-index: 20;
+    z-index: 100;
     max-width: 1200px;
     justify-content: space-between;
     align-items: center;
@@ -66,3 +96,204 @@ a {
     border-radius: 41px;
     box-shadow: 0 4px 48px rgba(0, 0, 0, .12);
 }
+
+/*
+
+/* hero image */
+.port-hero-container {
+    width: 100%;
+    height: 620px;
+    margin-top: 80px;
+}
+
+.port-hero-image {
+    z-index: 3;
+    width: 90%;
+    border-radius: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 269px;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
+    box-shadow: 0 16px 48px 8px rgba(0, 0, 0, .12);
+}
+
+.port-hero-image.middle {
+    z-index: 2;
+    top: 182px;
+    transform: scale(.95);
+}
+
+.port-hero-image.back {
+    z-index: 1;
+    top: 101px;
+    transform: scale(.9);
+}
+
+/* introduction */
+.hero-centered-paragraph {
+    max-width: 560px;
+    color: #5e5e63;
+    text-align: center;
+    line-height: 150%;
+}
+
+.hero-centered-paragraph.work {
+    max-width: 500px;
+}
+
+.h-space-8px {
+    width: 8px;
+    height: 100%;
+}
+
+.intro-logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    margin-right: 8px;
+    margin-top: 100px;
+}
+
+.callout-text {
+    width: 100%;
+    color: #323235;
+    margin-bottom: 0;
+    line-height: 150%;
+}
+
+.intro-role-team {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.role-column {
+    width: 210px;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 48px;
+    display: flex;
+}
+
+.role-section {
+    flex-direction: column;
+    margin-bottom: 32px;
+    display: flex;
+}
+
+.role-section.last {
+    margin-bottom: 0;
+}
+
+.role-subtitle {
+    color: #323235;
+    flex: 1;
+    align-self: flex-start;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.role-subtitle.last-one {
+    margin-bottom: 50px;
+}
+
+
+.team-column {
+    width: 247px;
+    flex-direction: column;
+    flex: 1;
+    display: flex;
+}
+
+.role-team {
+    width: 100%;
+    flex-direction: row;
+    flex: 1;
+    align-items: flex-start;
+    margin-top: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.v-space {
+    width: 100%;
+    height: 32px;
+}
+
+.v-space.extra-large {
+    height: 128px;
+}
+
+.v-space.extra-large.color {
+    background-color: #bdbdc5;
+}
+
+.v-space.large {
+    height: 64px;
+}
+
+.v-space.large.color {
+    background-color: #bdbdc5;
+}
+
+.v-space.medium {
+    height: 32px;
+}
+
+.v-space.medium.color {
+    background-color: #bdbdc5;
+}
+
+.v-space.small {
+    height: 16px;
+}
+
+.v-space.small.color {
+    background-color: #bdbdc5;
+}
+
+.h-stack {
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+
+.case-study-header-content {
+    width: 100%;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.case-study-header-content.job-card-case {
+    margin-top: -160px;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    background-color: #f1f1f1;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: auto;
+    padding: 48px 24px 32px;
+    display: flex;
+}
+
+
+  @media screen and (max-width: 900px) {
+    .carousel img{
+      width: calc(100% / 2);
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .carousel img{
+      width: 100%;
+    }
+  }

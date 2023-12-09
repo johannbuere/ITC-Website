@@ -35,6 +35,20 @@ a {
 html {
     scroll-behavior: smooth;
 }
+
+/* introduction */
+
+.hero-centered-paragraph {
+    max-width: 560px;
+    color: #5e5e63;
+    text-align: center;
+    line-height: 150%;
+}
+
+.hero-centered-paragraph.work {
+    max-width: 500px;
+}
+
 /* progress button & back 2 top button */
 #progress {
     background-color: #666666;
@@ -297,18 +311,6 @@ section{
     margin-bottom: 150px;
     display: flex;
     position: relative;
-}
-
-.hero-centered-paragraph {
-    max-width: 560px;
-    color: #5e5e63;
-    text-align: center;
-    margin-top: 30px;
-    line-height: 150%;
-}
-
-.hero-centered-paragraph.work {
-    max-width: 500px;
 }
 
 
