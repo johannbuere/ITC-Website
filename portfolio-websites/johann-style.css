@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --first-color: #dddddd;
+    --second-color: #fff;
+    --third-color: #f6f6f6;
+    --text-color: #222;
+    --light-text-color: #666666;
+    --input-light-text: #A9A9A9;
+
+
+    --box-shadow: 0 5px 25px rgb(2,2,2,0.1);
+    --text-shadow: 0 5px 25px rgb(2,2,2,0.1);
+    --main-hue: 197;
+    --input-bg: hsla(184, 9%, 62%, 1);
+    --input-bg-hover: hsla(var(--main-hue), 10%, 87%, 1);
+    --light-main-color: hsla(var(--main-hue), 91%, 50%);
+}
+
+a {
+    color: #5e5e63;
+    text-decoration: none;
+}
+
+/* top of the page */
+
+.top-of-the-page {
+    width: 100%;
+    height: 1px;
+}
+
+.menu-holder {
+    z-index: 20;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 72px;
+    padding-right: 72px;
+    display: flex;
+    position: fixed;
+    top: 32px;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
+}
+
+.icon-button {
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 8px 48px rgba(0, 0, 0, .12);
+    transition: 0.2s ease-in-out;
+    cursor: pointer
+}
+
+.icon-button:hover {
+    transition: 0.3 ease-in-out;
+    background-color: var(--third-color);
+    border-radius: 41px;
+    box-shadow: 0 4px 48px rgba(0, 0, 0, .12);
+}
