@@ -29,50 +29,118 @@ html {
     --light-main-color: hsla(var(--main-hue), 91%, 50%);
 }
 
-
-header {
-    text-align: center;
-    padding: 50px 0;
-    background-color: #2a2a2a;
+.port-hero-container {
+    width: 100%;
+    height: 620px;
+    margin-top: 80px;
 }
 
-h1 {
-    margin: 0;
-    font-size: 2em;
+.port-hero-image.first {
+    z-index: 3;
+    width: 90%;
+    border-radius: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 269px;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
+    box-shadow: 0 16px 48px 8px rgba(0, 0, 0, .12);
 }
 
-p {
-    margin: 5px 0;
+.port-hero-image.second {
+    z-index: 3;
+    top: 182px;
+    transform: scale(.95);
 }
 
-section {
-    padding: 50px 20px;
+.port-hero-image.third {
+    z-index: 2;
+    top: 101px;
+    transform: scale(.9);
 }
 
-h2 {
-    color: #61dafb;
+.port-hero-image.fourth {
+    z-index: 1;
+    top: 101px;
+    transform: scale(.85);
 }
 
-#about,
-#portfolio,
-#contact {
-    background-color: #2a2a2a;
+.v-space {
+    width: 100%;
+    height: 32px;
 }
 
-.project {
-    margin-bottom: 30px;
+.v-space.extra-large {
+    height: 128px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+.v-space.extra-large.color {
+    background-color: #bdbdc5;
 }
 
-a {
-    color: #5e5e63;
-    text-decoration: none;
+.v-space.large {
+    height: 64px;
 }
-a:hover {
-    background-color: #1373b5;
+
+.v-space.large.color {
+    background-color: #bdbdc5;
 }
+
+.v-space.medium {
+    height: 32px;
+}
+
+.v-space.medium.color {
+    background-color: #bdbdc5;
+}
+
+.v-space.small {
+    height: 16px;
+}
+
+.v-space.small.color {
+    background-color: #bdbdc5;
+}
+
+.h-stack {
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+
+.case-study-header-content {
+    width: 100%;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.case-study-header-content.job-card-case {
+    margin-top: -160px;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    background-color: #f1f1f1;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: auto;
+    padding: 48px 24px 32px;
+    display: flex;
+}
+
+
+  @media screen and (max-width: 900px) {
+    .carousel img{
+      width: calc(100% / 2);
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .carousel img{
+      width: 100%;
+    }
+  }
