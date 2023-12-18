@@ -1,4 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {
+    min-height: 100%;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 :root{
     --first-color: #dddddd;
@@ -17,96 +29,13 @@
     --light-main-color: hsla(var(--main-hue), 91%, 50%);
 }
 
-body {
-    min-height: 100%;
-    color: #333;
-    background-color: #fff;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-}
-
-a {
-    color: #5e5e63;
-    text-decoration: none;
-}
-
-.strong-text {
-    max-width: 500px;
-    color: #5e5e63;
-    text-align: left;
-    letter-spacing: .005em;
-    margin-bottom: 0;
-    font-size: 18px;
-    font-weight: 500;
-
-}
-html {
-    scroll-behavior: smooth;
-}
-
-.main-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* top of the page */
-
-.top-of-the-page {
-    width: 100%;
-    height: 1px;
-}
-
-.menu-holder {
-    z-index: 100;
-    max-width: 1200px;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 72px;
-    padding-right: 72px;
-    display: flex;
-    position: fixed;
-    top: 32px;
-    bottom: auto;
-    left: 0%;
-    right: 0%;
-}
-
-.icon-button {
-    z-index: 10;
-    width: 60px;
-    height: 60px;
-    background-color: #fff;
-    border-radius: 40px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    box-shadow: 0 8px 48px rgba(0, 0, 0, .12);
-    transition: 0.2s ease-in-out;
-    cursor: pointer
-}
-
-.icon-button:hover {
-    transition: 0.3 ease-in-out;
-    background-color: var(--third-color);
-    border-radius: 41px;
-    box-shadow: 0 4px 48px rgba(0, 0, 0, .12);
-}
-
-/*
-
-/* hero image */
 .port-hero-container {
     width: 100%;
     height: 620px;
     margin-top: 80px;
 }
 
-.port-hero-image {
+.port-hero-image.first {
     z-index: 3;
     width: 90%;
     border-radius: 32px;
@@ -120,19 +49,24 @@ html {
     box-shadow: 0 16px 48px 8px rgba(0, 0, 0, .12);
 }
 
-.port-hero-image.middle {
-    z-index: 2;
+.port-hero-image.second {
+    z-index: 3;
     top: 182px;
     transform: scale(.95);
 }
 
-.port-hero-image.back {
-    z-index: 1;
+.port-hero-image.third {
+    z-index: 2;
     top: 101px;
     transform: scale(.9);
 }
 
-/* introduction */
+.port-hero-image.fourth {
+    z-index: 1;
+    top: 101px;
+    transform: scale(.85);
+}
+
 .hero-centered-paragraph {
     max-width: 560px;
     color: #5e5e63;
