@@ -1,0 +1,78 @@
+body {
+    min-height: 100%;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root{
+    --first-color: #dddddd;
+    --second-color: #fff;
+    --third-color: #f6f6f6;
+    --text-color: #222;
+    --light-text-color: #666666;
+    --input-light-text: #A9A9A9;
+  
+
+    --box-shadow: 0 5px 25px rgb(2,2,2,0.1);
+    --text-shadow: 0 5px 25px rgb(2,2,2,0.1);
+    --main-hue: 197;
+    --input-bg: hsla(184, 9%, 62%, 1);
+    --input-bg-hover: hsla(var(--main-hue), 10%, 87%, 1);
+    --light-main-color: hsla(var(--main-hue), 91%, 50%);
+}
+
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #2a2a2a;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+p {
+    margin: 5px 0;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+h2 {
+    color: #61dafb;
+}
+
+#about,
+#portfolio,
+#contact {
+    background-color: #2a2a2a;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+a {
+    color: #5e5e63;
+    text-decoration: none;
+}
+a:hover {
+    background-color: #1373b5;
+}
