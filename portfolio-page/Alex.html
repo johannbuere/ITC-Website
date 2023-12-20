@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ITC Website - Alex's Portfolio</title>
+        <meta name="description" content="Elevate your brand with captivating visual storytelling and cutting-edge design by Johann Reuel D. Buere. Explore a portfolio where creativity meets functionality, showcasing a diverse range of innovative graphics that make a lasting impression.">
+        <link rel="stylesheet" href="Alex.css">
+        <link rel="icon" type="image/png" sizes="16x16 32x32 64x64" href="/assests/logo.png">
+     </head>   
+
+            <body>
+                <div id="top" class="top-of-the-page"></div>
+                <div class="menu-holder">
+                    <a href="/index.html" class="icon-button w-inline-block">
+                        <img src="https://uploads-ssl.webflow.com/5e1689facb9d5168c0dcbe0b/5fd65af4e1ad8f10bcd72f7b_ArrowLeft.svg" 
+                            loading="lazy" width="24" height="24" 
+                            alt="Back Arrow"/>
+                    </a>
+                </div>
+                <div class="image-container">
+                    <img id="main-image" src="Alex things grab here/Hi maam ano ginagawa mo dito.jpg" alt="Main Image">
+                    <img src="Alex things grab here/IMG_6717.JPG" alt="Image 2">
+                    <img src="Alex things grab here/IMG_6781.JPG" alt="Image 3">
+                    <img src="Alex things grab here/IMG_6818.JPG" alt="Image 4">
+                    <img src="Alex things grab here/IMG_6823.JPG" alt="Image 5">
+                    <img src="Alex things grab here/IMG_6836.JPG" alt="Image 6">
+                    
+                    
+                    
+                </div>
+            
+                <button id="next-button">Next</button>
+
+    <script src="Alex.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll(".image-container img");
+            const nextButton = document.getElementById("next-button");
+
+            let currentIndex = 0;
+
+            function showNextImage() {
+                images[currentIndex].classList.remove("visible");
+                images[currentIndex].style.display = "none";
+
+                currentIndex = (currentIndex + 1) % images.length;
+
+                images[currentIndex].classList.add("visible");
+                images[currentIndex].style.display = "block";
+            }
+
+            nextButton.addEventListener("click", showNextImage);
+        });
+    </script>
+            
+            
+            
+            
+            
+            <div class="case-study-header-content">
+                <div class="case-study-title-and-company">
+                    <img src="/assests/alexander-estor-crl.png" loading="lazy" class="intro-logo" />
+                    <div class="v-space small"></div>
+                    <h1>Alexander Justin Estor</h1>
+                    <div class="h-stack">
+                        <p class="strong-text">Photographer</p>
+                        <div class="h-space-8px"></div>
+                        <p class="strong-text">•</p>
+                        <div class="h-space-8px"></div>
+                        <p class="strong-text">2023</p>
+                    </div>
+                </div>
+                <div class="v-space medium"></div>
+                <div class="intro-role-team">
+                    <p class="callout-text">
+                        This portfolio serves as a start of my voyage through the world while seeing it all through my lens
+                    </p>
+                    <h1>Landscape / Portrait / Still life / Candid</h1>
+            
+            
+            
+
+            <footer class="footer">
+                <div class="caption">Copyright © 2023 CS1A. All rights reserved.</div>
+            </footer>
+            </body>
+</html>
